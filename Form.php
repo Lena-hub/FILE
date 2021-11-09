@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
 
     if( file_exists($_FILES['avatar']['tmp_name']) && filesize($_FILES['avatar']['tmp_name']) > $maxFileSize)
     {
-    $errors[] = "Votre fichier doit faire moins de 2M !";
+    $errors[] = "Votre fichier doit faire moins de 1M !";
     }
 
     if(!isset($errors)){
